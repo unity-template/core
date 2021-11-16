@@ -1,0 +1,27 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "version": "independent",
+  "registry": "https://registry.npm.alibaba-inc.com/",
+  "npmClient": "tnpm",
+  "command": {
+    "version": {
+      "message": "chore(release): publish %s",
+      "allowBranch": ["master", "feature/*", "bugfix/*"]
+    },
+    "bootstrap": {
+      "hoist": true
+    },
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md",
+        "**/test/**",
+        "**/develop/**"
+      ],
+      "message": "chore(release): publish %s"
+    }
+  }
+}

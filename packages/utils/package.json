@@ -1,0 +1,50 @@
+{
+  "name": "onex-template-utils",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "云墨 <isgenluo@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:varbee/template.git"
+  },
+  "scripts": {
+    "build": "rm -rf ./build && tsc -b ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/mem-fs-editor": "^7.0.0",
+    "@types/ora": "^3.2.0"
+  },
+  "dependencies": {
+    "@iceworks/constant": "^0.1.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "ice-npm-utils": "^2.0.1",
+    "mem-fs": "^1.2.0",
+    "mem-fs-editor": "^7.0.1",
+    "mkdirp": "^0.5.1",
+    "nanomatch": "^1.2.13",
+    "ora": "5.1.0",
+    "request": "^2.88.0",
+    "request-progress": "^3.0.0",
+    "request-promise": "^4.2.4",
+    "semver": "^6.0.0",
+    "tar": "^4.4.8",
+    "type-fest": "^1.0.1",
+    "url-join": "^4.0.1"
+  },
+  "gitHead": "2711b352c15e597e9e9303ead55fc34d316106b3"
+}
