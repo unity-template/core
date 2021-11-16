@@ -1,4 +1,4 @@
-import { BaseParams } from 'onex-template-utils';
+import { BaseParams } from '@generator-template/utils';
 import SyncTools from './utils/syncTools';
 
 interface AsyncProps {

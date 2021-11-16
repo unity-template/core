@@ -1,5 +1,5 @@
 {
-  "name": "onex-template-version-analyze",
+  "name": "@generator-template/version-analyze",
   "version": "0.0.1",
   "description": "NPM包之间的版本分析,分析版本修改内容,生成描述JSON",
   "keywords": [
@@ -33,7 +33,7 @@
     "build": "rm -rf ./build && tsc -b ./tsconfig.json"
   },
   "dependencies": {
-    "onex-template-utils": "^0.0.1",
+    "@generator-template/utils": "^0.0.1",
     "chalk": "^4.1.0",
     "es6-promisify": "^6.1.1",
     "fs-extra": "^9.0.1",

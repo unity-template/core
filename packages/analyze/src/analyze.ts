@@ -2,7 +2,7 @@ import { downloadVersions } from './utils/download';
 import { getDiffInfo } from './utils/git';
 import { parseGitPatch } from './utils/patch';
 import { Config } from './config';
-import { BaseParams} from 'onex-template-utils';
+import { BaseParams} from '@generator-template/utils';
 export { PatchResult } from './utils/patch';
 
 

@@ -1,4 +1,4 @@
-import { BaseParams, getNpmLatestSemverVersion } from 'onex-template-utils';
+import { BaseParams, getNpmLatestSemverVersion } from '@generator-template/utils';
 import chalk from 'chalk';
 import fs from 'fs-extra';
 import os from 'os';

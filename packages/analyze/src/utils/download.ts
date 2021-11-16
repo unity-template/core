@@ -1,4 +1,4 @@
-import { BaseParams, downloadMaterialTemplate, generator } from 'onex-template-utils';
+import { BaseParams, downloadMaterialTemplate, generator } from '@generator-template/utils';
 import fs from 'fs-extra';
 import isGit from 'is-git-repository';
 import os from 'os';

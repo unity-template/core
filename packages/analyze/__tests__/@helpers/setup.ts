@@ -25,7 +25,7 @@ export const mockDownloadInstance = {
   getNpmLatestSemverVersion: jest.fn<Promise<string>, any[]>(() => Promise.resolve('')),
   generator: jest.fn(),
 };
-jest.mock('onex-template-utils', () => (mockDownloadInstance));
+jest.mock('@generator-template/utils', () => (mockDownloadInstance));
 
 // mock fs
 export const mockFsInstance = {

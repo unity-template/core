@@ -1,7 +1,7 @@
 import path from 'path';
 import os from 'os';
 import hash from 'object-hash';
-import { BaseParams } from 'onex-template-utils';
+import { BaseParams } from '@generator-template/utils';
 
 
 export const npmPackageVersionRootPath = (pkgName: string, options: BaseParams) => {

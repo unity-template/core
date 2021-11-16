@@ -1,6 +1,6 @@
-# `onex-template-version-analyze`
+# `@generator-template/version-analyze`
 
-[![version](http://web.npm.alibaba-inc.com/badge/v/onex-template-version-analyze.svg?style=flat-square)](https://web.npm.alibaba-inc.com/package/onex-template-version-analyze) [![](http://web.npm.alibaba-inc.com/badge/d/onex-template-version-analyze.svg?style=flat-square)](https://web.npm.alibaba-inc.com/package/onex-template-version-analyze)
+[![version](http://web.npm.alibaba-inc.com/badge/v/@generator-template/version-analyze.svg?style=flat-square)](https://web.npm.alibaba-inc.com/package/@generator-template/version-analyze) [![](http://web.npm.alibaba-inc.com/badge/d/@generator-template/version-analyze.svg?style=flat-square)](https://web.npm.alibaba-inc.com/package/@generator-template/version-analyze)
 
 针对现有的模板初始化的流程中添加了以下的能力：
 * 补丁(patch、diff)文件分析
@@ -95,7 +95,7 @@ index 20bf454..c0fdafb 100644
 ![](/packages/analyze/assets/template分析.png)
 
 #### 3. sync 同步
-针对使用`template`初始化的仓库，通过`onex-template-version-analyze`提供项目同步的功能，保持仓库持续和模板同步更新。
+针对使用`template`初始化的仓库，通过`@generator-template/version-analyze`提供项目同步的功能，保持仓库持续和模板同步更新。
 
 整体的同步流程简单介绍下，首先我们会在原有的仓库的首次提交的`commit`上切换一个`sync`分支，这个分支用于同步`template`的变化，每次`template`变动之后，我们会在`sync`分支上，获取当前版本到最新版本的补丁（`patch`）文件，之后应用这个补丁更新更新初始化仓库，使用`git merge`将sync分支合并到当前的分支之上，从而完整整个过程
 
@@ -104,7 +104,7 @@ index 20bf454..c0fdafb 100644
 ## 安装
 
 首先全局安装
-> tnpm install --global onex-template-version-analyze
+> tnpm install --global @generator-template/version-analyze
 
 判断是否全局安装成功，存在template-sync命令
 > which template-sync
@@ -120,7 +120,7 @@ index 20bf454..c0fdafb 100644
     "sync": "./node_modules/.bin/template-sync"
   },
   "devDependencies": {
-    "onex-template-version-analyze": "^1.0.25"
+    "@generator-template/version-analyze": "^1.0.25"
   },
   "syncConfig": {
     "isNeedSync": true,
